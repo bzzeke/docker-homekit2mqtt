@@ -1,0 +1,126 @@
+{
+  "temp_floor_1": {
+    "service": "TemperatureSensor",
+    "name": "Floor 1 Temperature",
+    "topic": {
+      "statusTemperature": "/devices/thermostat/controls/Floor 1 Temperature"
+    },
+    "manufacturer": "cul2mqtt - ELV HMS FS20",
+    "model": "HMS100T",
+    "id": "temp_floor_1",
+    "payload": {},
+    "config": {}
+  },
+  "temp_floor_2": {
+    "service": "TemperatureSensor",
+    "name": "Floor 2 Temperature",
+    "topic": {
+      "statusTemperature": "/devices/thermostat/controls/Floor 2 Temperature"
+    },
+    "manufacturer": "cul2mqtt - ELV HMS FS20",
+    "model": "HMS100T",
+    "id": "temp_floor_2",
+    "payload": {},
+    "config": {}
+  },
+  "temp_basement": {
+    "service": "TemperatureSensor",
+    "name": "Basement Temperature",
+    "topic": {
+      "statusTemperature": "/devices/thermostat/controls/Basement Temperature"
+    },
+    "manufacturer": "cul2mqtt - ELV HMS FS20",
+    "model": "HMS100T",
+    "id": "temp_basement",
+    "payload": {},
+    "config": {}
+  },
+  "temp_outside": {
+    "service": "TemperatureSensor",
+    "name": "Outside Temperature",
+    "topic": {
+      "statusTemperature": "/devices/thermostat/controls/Outside Temperature"
+    },
+    "manufacturer": "cul2mqtt - ELV HMS FS20",
+    "model": "HMS100T",
+    "id": "temp_outside",
+    "payload": {},
+    "config": {}
+  },
+  "temp_garret": {
+    "service": "TemperatureSensor",
+    "name": "Garret Temperature",
+    "topic": {
+      "statusTemperature": "/devices/thermostat/controls/Garret Temperature"
+    },
+    "manufacturer": "cul2mqtt - ELV HMS FS20",
+    "model": "HMS100T",
+    "id": "temp_garret",
+    "payload": {},
+    "config": {}
+  },
+  "temp_bathhouse": {
+    "service": "TemperatureSensor",
+    "name": "Bathhouse Temperature",
+    "topic": {
+      "statusTemperature": "/devices/thermostat/controls/Bath House Temperature"
+    },
+    "manufacturer": "cul2mqtt - ELV HMS FS20",
+    "model": "HMS100T",
+    "id": "temp_bathhouse",
+    "payload": {},
+    "config": {}
+  },
+  "thermo_floor_1": {
+    "id": "thermo_floor_1",
+    "name": "Floor 1",
+    "service": "Thermostat",
+    "manufacturer": "test",
+    "model": "test",
+    "serial": "12345",
+    "topic": {
+      "setTargetTemperature": "/devices/thermostat/controls/Floor_1/on",
+      "statusTargetTemperature": "/devices/thermostat/controls/Floor_1",
+      "statusCurrentTemperature": "/devices/thermostat/controls/Floor 1 Temperature",
+      "statusTargetHeatingCoolingState": "/devices/wb-mr14_32/controls/K2",
+      "statusCurrentHeatingCoolingState": "/devices/wb-mr14_32/controls/K2"
+    },
+    "payload": {},
+    "config": {}
+  },
+  "thermo_floor_2": {
+    "id": "thermo_floor_2",
+    "name": "Floor 2",
+    "service": "Thermostat",
+    "manufacturer": "test",
+    "model": "test",
+    "serial": "12345",
+    "topic": {
+      "setTargetTemperature": "/devices/thermostat/controls/Floor_2/on",
+      "statusTargetTemperature": "/devices/thermostat/controls/Floor_2",
+      "statusCurrentTemperature": "/devices/thermostat/controls/Floor 2 Temperature",
+      "statusTargetHeatingCoolingState": "/devices/wb-mr14_32/controls/K1",
+      "statusCurrentHeatingCoolingState": "/devices/wb-mr14_32/controls/K1"
+    },
+    "payload": {},
+    "config": {}
+  },
+  "thermo_basement": {
+    "id": "thermo_basement",
+    "name": "Basement",
+    "service": "Thermostat",
+    "manufacturer": "test",
+    "model": "test",
+    "serial": "12345",
+    "topic": {
+      "setTargetTemperature": "/devices/thermostat/controls/Basement/on",
+      "statusTargetTemperature": "/devices/thermostat/controls/Basement",
+      "statusCurrentTemperature": "/devices/thermostat/controls/Basement Temperature",
+      "statusTargetHeatingCoolingState": "/devices/wb-mr14_32/controls/K3",
+      "statusCurrentHeatingCoolingState": "/devices/wb-mr14_32/controls/K3"
+    },
+    "payload": {},
+    "config": {}
+  }
+}
+
