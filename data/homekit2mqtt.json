@@ -121,6 +121,58 @@
     },
     "payload": {},
     "config": {}
+  },
+  "lights": {
+    "id": "lights",
+    "name": "Hall garland",
+    "service": "Switch",
+    "topic": {
+      "setOn": "/devices/s20/controls/accf232a3112/on",
+      "statusOn": "/devices/s20/controls/accf232a3112"
+    },
+    "payload": {
+      "onFalse": 0,
+      "onTrue": 1
+    },
+    "config": {}
+  },
+  "kitchen_garland": {
+    "id": "kitchen_garland",
+    "name": "Kitchen garland",
+    "service": "Switch",
+    "topic": {
+      "setOn": "/devices/s20/controls/accf232a0e66/on",
+      "statusOn": "/devices/s20/controls/accf232a0e66"
+    },
+    "payload": {
+      "onFalse": 0,
+      "onTrue": 1
+    }
+  },
+  "basement_garland": {
+    "id": "basement_garland",
+    "name": "Basement garland",
+    "service": "Switch",
+    "topic": {
+      "setOn": "/devices/s20/controls/accf232a0e14/on",
+      "statusOn": "/devices/s20/controls/accf232a0e14"
+    },
+    "payload": {
+      "onFalse": 0,
+      "onTrue": 1
+    }
+  },
+  "upstairs_garland": {
+    "id": "upstairs_garland",
+    "name": "Upstairs garland",
+    "service": "Switch",
+    "topic": {
+      "setOn": "/devices/s20/controls/accf232a2ba8/on",
+      "statusOn": "/devices/s20/controls/accf232a2ba8"
+    },
+    "payload": {
+      "onFalse": 0,
+      "onTrue": 1
+    }
   }
 }
-
