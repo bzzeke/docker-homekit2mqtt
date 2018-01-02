@@ -147,7 +147,8 @@
     "payload": {
       "onFalse": 0,
       "onTrue": 1
-    }
+    },
+    "config": {}
   },
   "basement_garland": {
     "id": "basement_garland",
@@ -160,7 +161,8 @@
     "payload": {
       "onFalse": 0,
       "onTrue": 1
-    }
+    },
+    "config": {}
   },
   "upstairs_garland": {
     "id": "upstairs_garland",
@@ -169,6 +171,20 @@
     "topic": {
       "setOn": "/devices/s20/controls/accf232a2ba8/on",
       "statusOn": "/devices/s20/controls/accf232a2ba8"
+    },
+    "payload": {
+      "onFalse": 0,
+      "onTrue": 1
+    },
+    "config": {}
+  },
+  "water_heater": {
+    "id": "water_heater",
+    "name": "Water heater",
+    "service": "Switch",
+    "topic": {
+      "setOn": "/devices/thermostat/controls/Water heater/on",
+      "statusOn": "/devices/thermostat/controls/Water heater"
     },
     "payload": {
       "onFalse": 0,
