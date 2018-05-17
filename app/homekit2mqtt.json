@@ -355,5 +355,25 @@
         "props": {}
       }
     ]
+  },
+  "occupancy": {
+    "id": "occupancy",
+    "name": "Occupancy",
+    "services": [
+      {
+        "name": "Occupancy",
+        "service": "Switch",
+        "topic": {
+          "setOn": "/devices/util/controls/Occupancy/on",
+          "statusOn": "/devices/util/controls/Occupancy"
+        },
+        "payload": {
+          "onFalse": 0,
+          "onTrue": 1
+        },
+        "config": {},
+        "props": {}
+      }
+    ]
   }
 }
