@@ -375,5 +375,25 @@
         "props": {}
       }
     ]
+  },
+  "garage": {
+    "id": "garage",
+    "name": "Garage",
+    "services": [
+      {
+        "name": "Garage",
+        "service": "GarageDoorOpener",
+        "topic": {
+          "setDoor": "/sonoff/cmnd/garage/POWER",
+          "statusDoor": "/sonoff/cmnd/closed/POWER1"
+        },
+        "payload": {
+          "doorOpen": "ON",
+          "doorClosed": "ON"
+        },
+        "config": {},
+        "props": {}
+      }
+    ]
   }
 }
