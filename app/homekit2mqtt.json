@@ -278,10 +278,10 @@
   },
   "gardenlights1_1": {
     "id": "gardenlights1_1",
-    "name": "Garden bushes",
+    "name": "Garden roads",
     "services": [
       {
-        "name": "Garden bushes",
+        "name": "Garden roads",
         "service": "Switch",
         "topic": {
           "setOn": "/sonoff/cmnd/gardenlights1/power1",
@@ -298,10 +298,10 @@
   },
   "gardenlights1_2": {
     "id": "gardenlights1_2",
-    "name": "Outside harland",
+    "name": "Garden bushes",
     "services": [
       {
-        "name": "Outside harland",
+        "name": "Garden bushes",
         "service": "Switch",
         "topic": {
           "setOn": "/sonoff/cmnd/gardenlights1/power2",
@@ -338,10 +338,10 @@
   },
   "gardenlights2_2": {
     "id": "gardenlights2_2",
-    "name": "Garden roads",
+    "name": "Harland",
     "services": [
       {
-        "name": "Garden roads",
+        "name": "Harland",
         "service": "Switch",
         "topic": {
           "setOn": "/sonoff/cmnd/gardenlights2/power2",
@@ -390,6 +390,24 @@
         "payload": {
           "doorOpen": "ON",
           "doorClosed": "ON"
+        },
+        "config": {},
+        "props": {}
+      }
+    ]
+  },
+  "leak": {
+    "id": "leak",
+    "name": "Leak",
+    "services": [
+      {
+        "name": "Leak",
+        "service": "LeakSensor",
+        "topic": {
+          "statusLeakDetected": "/devices/water_supply/controls/Leak"
+        },
+        "payload": {
+          "onLeakDetected": 1
         },
         "config": {},
         "props": {}
