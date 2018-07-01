@@ -385,7 +385,7 @@
         "service": "GarageDoorOpener",
         "topic": {
           "setDoor": "/sonoff/cmnd/garage/POWER",
-          "statusDoor": "/sonoff/cmnd/closed/POWER1"
+          "statusDoor": "/sonoff/cmnd/closed/POWER2"
         },
         "payload": {
           "doorOpen": "ON",
