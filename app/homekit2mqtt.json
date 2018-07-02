@@ -278,10 +278,10 @@
   },
   "gardenlights1_1": {
     "id": "gardenlights1_1",
-    "name": "Garden roads",
+    "name": "Harlan",
     "services": [
       {
-        "name": "Garden roads",
+        "name": "Harland",
         "service": "Switch",
         "topic": {
           "setOn": "/sonoff/cmnd/gardenlights1/power1",
@@ -338,10 +338,10 @@
   },
   "gardenlights2_2": {
     "id": "gardenlights2_2",
-    "name": "Harland",
+    "name": "Garden roads",
     "services": [
       {
-        "name": "Harland",
+        "name": "Garden roads",
         "service": "Switch",
         "topic": {
           "setOn": "/sonoff/cmnd/gardenlights2/power2",
