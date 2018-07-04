@@ -264,8 +264,8 @@
         "name": "Water heater",
         "service": "Switch",
         "topic": {
-          "setOn": "/devices/thermostat/controls/Water heater/on",
-          "statusOn": "/devices/thermostat/controls/Water heater"
+          "setOn": "/devices/water_supply/controls/Heater/on",
+          "statusOn": "/devices/water_supply/controls/Heater"
         },
         "payload": {
           "onFalse": 0,
@@ -408,6 +408,25 @@
         },
         "payload": {
           "onLeakDetected": 1
+        },
+        "config": {},
+        "props": {}
+      }
+    ]
+  },
+  "ups": {
+    "name": "UPS",
+    "id": "ups",
+    "services": [
+      {
+        "name": "UPS",
+        "service": "BatteryService",
+        "topic": {
+          "statusBatteryLevel": "/devices/ups/controls/Battery charge",
+          "statusLowBattery": "/devices/ups/controls/Status"
+        },
+        "payload": {
+          "onLowBattery": "Low battery"
         },
         "config": {},
         "props": {}
