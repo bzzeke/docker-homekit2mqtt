@@ -1,436 +1,433 @@
 {
-  "temp_floor_1": {
-    "name": "Floor 1 Temperature",
-    "manufacturer": "cul2mqtt - ELV HMS FS20",
-    "model": "HMS100T",
-    "id": "temp_floor_1",
-    "services": [
-      {
-        "name": "Floor 1 Temperature",
-        "service": "TemperatureSensor",
-        "topic": {
-          "statusTemperature": "/devices/thermostat/controls/Floor 1 Temperature"
-        },
-        "payload": {},
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "temp_floor_2": {
-    "name": "Floor 2 Temperature",
-    "manufacturer": "cul2mqtt - ELV HMS FS20",
-    "model": "HMS100T",
-    "id": "temp_floor_2",
-    "services": [
-      {
-        "name": "Floor 2 Temperature",
-        "service": "TemperatureSensor",
-        "topic": {
-          "statusTemperature": "/devices/thermostat/controls/Floor 2 Temperature"
-        },
-        "payload": {},
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "temp_basement": {
-    "name": "Basement Temperature",
-    "manufacturer": "cul2mqtt - ELV HMS FS20",
-    "model": "HMS100T",
-    "id": "temp_basement",
-    "services": [
-      {
-        "name": "Basement Temperature",
-        "service": "TemperatureSensor",
-        "topic": {
-          "statusTemperature": "/devices/thermostat/controls/Basement Temperature"
-        },
-        "payload": {},
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "temp_outside": {
-    "name": "Outside Temperature",
-    "manufacturer": "cul2mqtt - ELV HMS FS20",
-    "model": "HMS100T",
-    "id": "temp_outside",
-    "services": [
-      {
+    "temp_outside": {
         "name": "Outside Temperature",
-        "service": "TemperatureSensor",
-        "topic": {
-          "statusTemperature": "/devices/thermostat/controls/Outside Temperature"
-        },
-        "payload": {},
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "temp_garret": {
-    "name": "Garret Temperature",
-    "manufacturer": "cul2mqtt - ELV HMS FS20",
-    "model": "HMS100T",
-    "id": "temp_garret",
-    "services": [
-      {
+        "manufacturer": "zeke",
+        "model": "ds18b20",
+        "id": "temp_outside",
+        "services": [
+            {
+                "name": "Outside Temperature",
+                "service": "TemperatureSensor",
+                "topic": {
+                    "statusTemperature": "/devices/thermostat/controls/Outside Temperature"
+                },
+                "payload": {},
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "temp_garret": {
         "name": "Garret Temperature",
-        "service": "TemperatureSensor",
-        "topic": {
-          "statusTemperature": "/devices/thermostat/controls/Garret Temperature"
-        },
-        "payload": {},
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "temp_bathhouse": {
-    "name": "Bathhouse Temperature",
-    "manufacturer": "cul2mqtt - ELV HMS FS20",
-    "model": "HMS100T",
-    "id": "temp_bathhouse",
-    "services": [
-      {
+        "manufacturer": "zeke",
+        "model": "ds18b20",
+        "id": "temp_garret",
+        "services": [
+            {
+                "name": "Garret Temperature",
+                "service": "TemperatureSensor",
+                "topic": {
+                    "statusTemperature": "/devices/thermostat/controls/Garret Temperature"
+                },
+                "payload": {},
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "temp_bathhouse": {
         "name": "Bathhouse Temperature",
-        "service": "TemperatureSensor",
-        "topic": {
-          "statusTemperature": "/devices/thermostat/controls/Bath House Temperature"
-        },
-        "payload": {},
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "thermo_floor_1": {
-    "id": "thermo_floor_1",
-    "name": "Floor 1",
-    "manufacturer": "test",
-    "model": "test",
-    "serial": "12345",
-    "services": [
-      {
+        "manufacturer": "zeke",
+        "model": "ds18b20",
+        "id": "temp_bathhouse",
+        "services": [
+            {
+                "name": "Bathhouse Temperature",
+                "service": "TemperatureSensor",
+                "topic": {
+                    "statusTemperature": "/devices/thermostat/controls/Bath House Temperature"
+                },
+                "payload": {},
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "thermo_floor_1": {
+        "id": "thermo_floor_1",
         "name": "Floor 1",
-        "service": "Thermostat",
-        "topic": {
-          "setTargetTemperature": "/devices/thermostat/controls/Floor_1/on",
-          "statusTargetTemperature": "/devices/thermostat/controls/Floor_1",
-          "statusCurrentTemperature": "/devices/thermostat/controls/Floor 1 Temperature",
-          "statusTargetHeatingCoolingState": "/devices/wb-mr14_32/controls/K2",
-          "statusCurrentHeatingCoolingState": "/devices/wb-mr14_32/controls/K2"
-        },
-        "payload": {},
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "thermo_floor_2": {
-    "id": "thermo_floor_2",
-    "name": "Floor 2",
-    "manufacturer": "test",
-    "model": "test",
-    "serial": "12345",
-    "services": [
-      {
+        "manufacturer": "zeke",
+        "model": "WB",
+        "serial": "000001",
+        "services": [
+            {
+                "name": "Floor 1",
+                "service": "Thermostat",
+                "topic": {
+                    "setTargetTemperature": "/devices/thermostat/controls/Floor_1/on",
+                    "statusTargetTemperature": "/devices/thermostat/controls/Floor_1",
+                    "statusCurrentTemperature": "/devices/thermostat/controls/Floor 1 Temperature",
+                    "statusTargetHeatingCoolingState": "/devices/relays/controls/K1",
+                    "statusCurrentHeatingCoolingState": "/devices/relays/controls/K1",
+                    "statusCurrentRelativeHumidity": "/devices/sensor_1/controls/Humidity"
+                },
+                "payload": {},
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "thermo_floor_2": {
+        "id": "thermo_floor_2",
         "name": "Floor 2",
-        "service": "Thermostat",
-        "topic": {
-          "setTargetTemperature": "/devices/thermostat/controls/Floor_2/on",
-          "statusTargetTemperature": "/devices/thermostat/controls/Floor_2",
-          "statusCurrentTemperature": "/devices/thermostat/controls/Floor 2 Temperature",
-          "statusTargetHeatingCoolingState": "/devices/wb-mr14_32/controls/K1",
-          "statusCurrentHeatingCoolingState": "/devices/wb-mr14_32/controls/K1"
-        },
-        "payload": {},
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "thermo_basement": {
-    "id": "thermo_basement",
-    "name": "Basement",
-    "manufacturer": "test",
-    "model": "test",
-    "serial": "12345",
-    "services": [
-      {
+        "manufacturer": "zeke",
+        "model": "WB",
+        "serial": "000002",
+        "services": [
+            {
+                "name": "Floor 2",
+                "service": "Thermostat",
+                "topic": {
+                    "setTargetTemperature": "/devices/thermostat/controls/Floor_2/on",
+                    "statusTargetTemperature": "/devices/thermostat/controls/Floor_2",
+                    "statusCurrentTemperature": "/devices/thermostat/controls/Floor 2 Temperature",
+                    "statusTargetHeatingCoolingState": "/devices/relays/controls/K2",
+                    "statusCurrentHeatingCoolingState": "/devices/relays/controls/K2",
+                    "statusCurrentRelativeHumidity": "/devices/sensor_2/controls/Humidity"
+                },
+                "payload": {},
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "thermo_basement": {
+        "id": "thermo_basement",
         "name": "Basement",
-        "service": "Thermostat",
-        "topic": {
-          "setTargetTemperature": "/devices/thermostat/controls/Basement/on",
-          "statusTargetTemperature": "/devices/thermostat/controls/Basement",
-          "statusCurrentTemperature": "/devices/thermostat/controls/Basement Temperature",
-          "statusTargetHeatingCoolingState": "/devices/wb-mr14_32/controls/K3",
-          "statusCurrentHeatingCoolingState": "/devices/wb-mr14_32/controls/K3"
-        },
-        "payload": {},
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "lights": {
-    "id": "lights",
-    "name": "Hall garland",
-    "services": [
-      {
+        "manufacturer": "zeke",
+        "model": "WB",
+        "serial": "000003",
+        "services": [
+            {
+                "name": "Basement",
+                "service": "Thermostat",
+                "topic": {
+                    "setTargetTemperature": "/devices/thermostat/controls/Basement/on",
+                    "statusTargetTemperature": "/devices/thermostat/controls/Basement",
+                    "statusCurrentTemperature": "/devices/thermostat/controls/Basement Temperature",
+                    "statusTargetHeatingCoolingState": "/devices/relays/controls/K3",
+                    "statusCurrentHeatingCoolingState": "/devices/relays/controls/K3",
+                    "statusCurrentRelativeHumidity": "/devices/sensor_0/controls/Humidity"
+                },
+                "payload": {},
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "lights": {
+        "id": "lights",
         "name": "Hall garland",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/devices/s20/controls/accf232a3112/on",
-          "statusOn": "/devices/s20/controls/accf232a3112"
-        },
-        "payload": {
-          "onFalse": 0,
-          "onTrue": 1
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "kitchen_garland": {
-    "id": "kitchen_garland",
-    "name": "Kitchen garland",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Hall garland",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/devices/s20/controls/accf232a0e14/on",
+                    "statusOn": "/devices/s20/controls/accf232a0e14"
+                },
+                "payload": {
+                    "onFalse": 0,
+                    "onTrue": 1
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "kitchen_garland": {
+        "id": "kitchen_garland",
         "name": "Kitchen garland",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/devices/s20/controls/accf232a0e66/on",
-          "statusOn": "/devices/s20/controls/accf232a0e66"
-        },
-        "payload": {
-          "onFalse": 0,
-          "onTrue": 1
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "basement_garland": {
-    "id": "basement_garland",
-    "name": "Basement garland",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Kitchen garland",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/devices/s20/controls/accf232a3112/on",
+                    "statusOn": "/devices/s20/controls/accf232a3112"
+                },
+                "payload": {
+                    "onFalse": 0,
+                    "onTrue": 1
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "basement_garland": {
+        "id": "basement_garland",
         "name": "Basement garland",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/devices/s20/controls/accf232a0e14/on",
-          "statusOn": "/devices/s20/controls/accf232a0e14"
-        },
-        "payload": {
-          "onFalse": 0,
-          "onTrue": 1
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "upstairs_garland": {
-    "id": "upstairs_garland",
-    "name": "Upstairs garland",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Basement garland",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/devices/s20/controls/accf232a0e14/on",
+                    "statusOn": "/devices/s20/controls/accf232a0e14"
+                },
+                "payload": {
+                    "onFalse": 0,
+                    "onTrue": 1
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "upstairs_garland": {
+        "id": "upstairs_garland",
         "name": "Upstairs garland",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/devices/s20/controls/accf232a2ba8/on",
-          "statusOn": "/devices/s20/controls/accf232a2ba8"
-        },
-        "payload": {
-          "onFalse": 0,
-          "onTrue": 1
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "water_heater": {
-    "id": "water_heater",
-    "name": "Water heater",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Upstairs garland",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/devices/s20/controls/accf232a2ba8/on",
+                    "statusOn": "/devices/s20/controls/accf232a2ba8"
+                },
+                "payload": {
+                    "onFalse": 0,
+                    "onTrue": 1
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "water_heater": {
+        "id": "water_heater",
         "name": "Water heater",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/devices/water_supply/controls/Heater/on",
-          "statusOn": "/devices/water_supply/controls/Heater"
-        },
-        "payload": {
-          "onFalse": 0,
-          "onTrue": 1
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "gardenlights1_1": {
-    "id": "gardenlights1_1",
-    "name": "Harlan",
-    "services": [
-      {
-        "name": "Harland",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/sonoff/cmnd/gardenlights1/power1",
-          "statusOn": "/sonoff/stat/gardenlights1/POWER1"
-        },
-        "payload": {
-          "onFalse": "OFF",
-          "onTrue": "ON"
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "gardenlights1_2": {
-    "id": "gardenlights1_2",
-    "name": "Garden bushes",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Water heater",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/devices/water_supply/controls/Heater/on",
+                    "statusOn": "/devices/water_supply/controls/Heater"
+                },
+                "payload": {
+                    "onFalse": 0,
+                    "onTrue": 1
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "gardenlights1_1": {
+        "id": "gardenlights1_1",
+        "name": "Harlan",
+        "services": [
+            {
+                "name": "Harland",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/sonoff/cmnd/gardenlights1/power1",
+                    "statusOn": "/sonoff/stat/gardenlights1/POWER1"
+                },
+                "payload": {
+                    "onFalse": "OFF",
+                    "onTrue": "ON"
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "gardenlights1_2": {
+        "id": "gardenlights1_2",
         "name": "Garden bushes",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/sonoff/cmnd/gardenlights1/power2",
-          "statusOn": "/sonoff/stat/gardenlights1/POWER2"
-        },
-        "payload": {
-          "onFalse": "OFF",
-          "onTrue": "ON"
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "gardenlights2_1": {
-    "id": "gardenlights2_1",
-    "name": "Garden spots",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Garden bushes",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/sonoff/cmnd/gardenlights1/power2",
+                    "statusOn": "/sonoff/stat/gardenlights1/POWER2"
+                },
+                "payload": {
+                    "onFalse": "OFF",
+                    "onTrue": "ON"
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "gardenlights2_1": {
+        "id": "gardenlights2_1",
         "name": "Garden spots",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/sonoff/cmnd/gardenlights2/power1",
-          "statusOn": "/sonoff/stat/gardenlights2/POWER1"
-        },
-        "payload": {
-          "onFalse": "OFF",
-          "onTrue": "ON"
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "gardenlights2_2": {
-    "id": "gardenlights2_2",
-    "name": "Garden roads",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Garden spots",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/sonoff/cmnd/gardenlights2/power1",
+                    "statusOn": "/sonoff/stat/gardenlights2/POWER1"
+                },
+                "payload": {
+                    "onFalse": "OFF",
+                    "onTrue": "ON"
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "gardenlights2_2": {
+        "id": "gardenlights2_2",
         "name": "Garden roads",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/sonoff/cmnd/gardenlights2/power2",
-          "statusOn": "/sonoff/stat/gardenlights2/POWER2"
-        },
-        "payload": {
-          "onFalse": "OFF",
-          "onTrue": "ON"
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "occupancy": {
-    "id": "occupancy",
-    "name": "Occupancy",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Garden roads",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/sonoff/cmnd/gardenlights2/power2",
+                    "statusOn": "/sonoff/stat/gardenlights2/POWER2"
+                },
+                "payload": {
+                    "onFalse": "OFF",
+                    "onTrue": "ON"
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "occupancy": {
+        "id": "occupancy",
         "name": "Occupancy",
-        "service": "Switch",
-        "topic": {
-          "setOn": "/devices/util/controls/Occupancy/on",
-          "statusOn": "/devices/util/controls/Occupancy"
-        },
-        "payload": {
-          "onFalse": 0,
-          "onTrue": 1
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "garage": {
-    "id": "garage",
-    "name": "Garage",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Occupancy",
+                "service": "Switch",
+                "topic": {
+                    "setOn": "/devices/util/controls/Occupancy/on",
+                    "statusOn": "/devices/util/controls/Occupancy"
+                },
+                "payload": {
+                    "onFalse": 0,
+                    "onTrue": 1
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "garage": {
+        "id": "garage",
         "name": "Garage",
-        "service": "GarageDoorOpener",
-        "topic": {
-          "setDoor": "/sonoff/cmnd/garage/POWER",
-          "statusDoor": "/sonoff/cmnd/closed/POWER2"
-        },
-        "payload": {
-          "doorOpen": "ON",
-          "doorClosed": "ON"
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "leak": {
-    "id": "leak",
-    "name": "Leak",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Garage",
+                "service": "GarageDoorOpener",
+                "topic": {
+                    "setDoor": "/sonoff/cmnd/garage/POWER",
+                    "statusDoor": "/sonoff/cmnd/closed/POWER2"
+                },
+                "payload": {
+                    "doorOpen": "ON",
+                    "doorClosed": "ON"
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "leak": {
+        "id": "leak",
         "name": "Leak",
-        "service": "LeakSensor",
-        "topic": {
-          "statusLeakDetected": "/devices/water_supply/controls/Leak"
-        },
-        "payload": {
-          "onLeakDetected": 1
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  },
-  "ups": {
-    "name": "UPS",
-    "id": "ups",
-    "services": [
-      {
+        "services": [
+            {
+                "name": "Leak",
+                "service": "LeakSensor",
+                "topic": {
+                    "statusLeakDetected": "/devices/water_supply/controls/Leak"
+                },
+                "payload": {
+                    "onLeakDetected": 1
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "ups": {
         "name": "UPS",
-        "service": "BatteryService",
-        "topic": {
-          "statusBatteryLevel": "/devices/ups/controls/Battery charge",
-          "statusLowBattery": "/devices/ups/controls/Status"
-        },
-        "payload": {
-          "onLowBattery": "Low battery"
-        },
-        "config": {},
-        "props": {}
-      }
-    ]
-  }
+        "id": "ups",
+        "services": [
+            {
+                "name": "UPS",
+                "service": "BatteryService",
+                "topic": {
+                    "statusBatteryLevel": "/devices/ups/controls/Battery charge",
+                    "statusLowBattery": "/devices/ups/controls/Status"
+                },
+                "payload": {
+                    "onLowBattery": "Low battery"
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "humidity_floor1": {
+        "name": "Floor 1 Humidity",
+        "id": "humidity_floor1",
+        "services": [
+            {
+                "name": "Floor 1 Humidity",
+                "service": "HumiditySensor",
+                "topic": {
+                    "statusHumidity": "/devices/sensor_1/controls/Humidity"
+                },
+                "payload": {},
+                "config": {},
+                "props": {}
+            }
+        ]
+    },        
+    "humidity_floor2": {
+        "name": "Floor 2 Humidity",
+        "id": "humidity_floor2",
+        "services": [
+            {
+                "name": "Floor 2 Humidity",
+                "service": "HumiditySensor",
+                "topic": {
+                    "statusHumidity": "/devices/sensor_2/controls/Humidity"
+                },
+                "payload": {},
+                "config": {},
+                "props": {}
+            }
+        ]
+    },    
+    "humidity_basement": {
+        "name": "Basement Humidity",
+        "id": "humidity_basement",
+        "services": [
+            {
+                "name": "Basement Humidity",
+                "service": "HumiditySensor",
+                "topic": {
+                    "statusHumidity": "/devices/sensor_0/controls/Humidity"
+                },
+                "payload": {},
+                "config": {},
+                "props": {}
+            }
+        ]
+    }
 }
