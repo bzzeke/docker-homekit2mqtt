@@ -9,7 +9,7 @@
                 "name": "Outside Temperature",
                 "service": "TemperatureSensor",
                 "topic": {
-                    "statusTemperature": "/devices/thermostat/controls/Outside Temperature"
+                    "statusTemperature": "/devices/wb-w1/controls/28-001417357bff"
                 },
                 "payload": {},
                 "config": {},
@@ -27,7 +27,7 @@
                 "name": "Garret Temperature",
                 "service": "TemperatureSensor",
                 "topic": {
-                    "statusTemperature": "/devices/thermostat/controls/Garret Temperature"
+                    "statusTemperature": "/devices/wb-w1/controls/28-001416f342ff"
                 },
                 "payload": {},
                 "config": {},
@@ -45,7 +45,7 @@
                 "name": "Bathhouse Temperature",
                 "service": "TemperatureSensor",
                 "topic": {
-                    "statusTemperature": "/devices/thermostat/controls/Bath House Temperature"
+                    "statusTemperature": "/devices/wb-w1/controls/28-0014175dd1ff"
                 },
                 "payload": {},
                 "config": {},
@@ -66,7 +66,7 @@
                 "topic": {
                     "setTargetTemperature": "/devices/thermostat/controls/Floor_1/on",
                     "statusTargetTemperature": "/devices/thermostat/controls/Floor_1",
-                    "statusCurrentTemperature": "/devices/thermostat/controls/Floor 1 Temperature",
+                    "statusCurrentTemperature": "/devices/sensor_1/controls/Temperature",
                     "statusTargetHeatingCoolingState": "/devices/relays/controls/K1",
                     "statusCurrentHeatingCoolingState": "/devices/relays/controls/K1",
                     "statusCurrentRelativeHumidity": "/devices/sensor_1/controls/Humidity"
@@ -90,7 +90,7 @@
                 "topic": {
                     "setTargetTemperature": "/devices/thermostat/controls/Floor_2/on",
                     "statusTargetTemperature": "/devices/thermostat/controls/Floor_2",
-                    "statusCurrentTemperature": "/devices/thermostat/controls/Floor 2 Temperature",
+                    "statusCurrentTemperature": "/devices/sensor_2/controls/Temperature",
                     "statusTargetHeatingCoolingState": "/devices/relays/controls/K2",
                     "statusCurrentHeatingCoolingState": "/devices/relays/controls/K2",
                     "statusCurrentRelativeHumidity": "/devices/sensor_2/controls/Humidity"
@@ -114,7 +114,7 @@
                 "topic": {
                     "setTargetTemperature": "/devices/thermostat/controls/Basement/on",
                     "statusTargetTemperature": "/devices/thermostat/controls/Basement",
-                    "statusCurrentTemperature": "/devices/thermostat/controls/Basement Temperature",
+                    "statusCurrentTemperature": "/devices/sensor_0/controls/Temperature",
                     "statusTargetHeatingCoolingState": "/devices/relays/controls/K3",
                     "statusCurrentHeatingCoolingState": "/devices/relays/controls/K3",
                     "statusCurrentRelativeHumidity": "/devices/sensor_0/controls/Humidity"
@@ -353,7 +353,7 @@
                 "name": "Leak",
                 "service": "LeakSensor",
                 "topic": {
-                    "statusLeakDetected": "/devices/water_supply/controls/Leak"
+                    "statusLeakDetected": "/devices/leak_sensor/controls/F1"
                 },
                 "payload": {
                     "onLeakDetected": 1
@@ -431,3 +431,4 @@
         ]
     }
 }
+
