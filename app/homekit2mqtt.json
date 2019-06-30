@@ -345,15 +345,33 @@
             }
         ]
     },
-    "leak": {
-        "id": "leak",
-        "name": "Leak",
+    "leak_boiler": {
+        "id": "leak_boiler",
+        "name": "Leak in boiler room",
         "services": [
             {
-                "name": "Leak",
+                "name": "Leak in boiler room",
                 "service": "LeakSensor",
                 "topic": {
-                    "statusLeakDetected": "/devices/leak_sensor/controls/F1"
+                    "statusLeakDetected": "/devices/leak_sensor/controls/F2"
+                },
+                "payload": {
+                    "onLeakDetected": 1
+                },
+                "config": {},
+                "props": {}
+            }
+        ]
+    },
+    "leak_laundry": {
+        "id": "leak_laundry",
+        "name": "Leak in laundry",
+        "services": [
+            {
+                "name": "Leak in laundry",
+                "service": "LeakSensor",
+                "topic": {
+                    "statusLeakDetected": "/devices/leak_sensor/controls/F3"
                 },
                 "payload": {
                     "onLeakDetected": 1
